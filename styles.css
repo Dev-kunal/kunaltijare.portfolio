@@ -22,13 +22,6 @@ body {
   padding: 0rem 0.5rem;
 }
 
-/* .list-non-bullet {
-  display: inline;
-  color: white;
-  text-decoration: none;
-  padding: 0rem 0.5rem;
-} */
-
 .list-item-inline {
   text-decoration: none;
   display: inline;
@@ -76,24 +69,6 @@ hr {
   margin: auto;
 }
 
-/* .link {
-  box-sizing: border-box;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-} */
-
-/* .list-item-inline {
-  display: inline;
-  padding: 0rem 0.5rem;
-} */
-
-/* .navigation {
-  color: white;
-  padding: 1rem;
-  border-bottom-left-radius: 1rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */
-
 .navigation .nav-pills {
   text-align: right;
 }
@@ -127,6 +102,8 @@ hr {
 .section {
   padding: 3rem;
   margin: 0 auto;
+  max-width: 700px;
+  border-radius: 7px;
 }
 
 .section h1 {
@@ -134,7 +111,7 @@ hr {
 }
 
 .box {
-  background-color: #6b728048;
+  background-color: #4343481a;
 }
 .link {
   background-color: #434348;
