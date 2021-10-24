@@ -1,11 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+
+:root{
+  --bgBlack:#030304;
+  /* --primary:#EC0D13; */
+  --primary:#4d4ddf;
+  --border: #aea1a2;
+}
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 400;
+  font-size: small;
+  color:white;
+  background-color: #030304;
   overflow-x: hidden;
 }
 .navigation-container {
-  background-color: #434348;
+  background-color: #030304;
   padding: 0.2rem 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
@@ -15,7 +33,6 @@ body {
 
 .list-non-bullet {
   text-align: right;
-  color: black;
   padding: 0rem 0.5rem;
 }
 
@@ -42,7 +59,7 @@ a:visited {
 }
 
 a:hover {
-  color: white;
+  color: var(--primary);
 }
 
 a:active {
@@ -93,7 +110,7 @@ hr {
 }
 
 .hero .hero-heading .heading-inverted {
-  color: #434348;
+  color: #4d4ddf;
 }
 
 .section {
@@ -111,13 +128,13 @@ hr {
   background-color: #4343481a;
 }
 .link {
-  background-color: #434348;
+  background-color: #030303;
   padding: 0.5rem;
   border-radius: 5px;
   text-decoration: none;
 }
 .footer {
-  background-color: #434348;
+  background-color:var(--bgBlack);
   padding: 3rem 1rem;
   text-align: center;
   color: white;
@@ -141,6 +158,22 @@ hr {
 
 .footer ul {
   padding-inline-start: 0px;
+  min-width: 15rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer ul li a i{
+  font-size: 1.3rem;
+}
+
+
+/** mobile view */
+
+@media screen and (max-width:767px) {
+  .footer ul li a i{
+  font-size: 1rem;
+}
+
 }
 
 /** projects **/
@@ -159,11 +192,7 @@ hr {
 
 /* All hover effects */
 
-.navigation:hover {
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2),
-    0 12px 20px 0 rgba(0, 0, 0, 0.19);
-}
 .link:hover {
-  background-color: #333336;
+  background-color: #43434842;
   padding: 0.5rem;
 }
