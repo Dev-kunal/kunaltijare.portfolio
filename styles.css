@@ -57,10 +57,12 @@ a:link {
 a:visited {
   color: white;
 }
-
-a:hover {
+.nav-pills .list-item-inline > a:hover{
   color: var(--primary);
 }
+/* a:hover {
+  color: var(--primary);
+} */
 
 a:active {
   color: white;
@@ -69,6 +71,8 @@ a:active {
 hr {
   margin: 2rem 0rem;
 }
+
+
 
 .margin-md {
   margin: 2rem;
@@ -127,11 +131,18 @@ hr {
 .box {
   background-color: #4343481a;
 }
+
 .link {
-  background-color: #030303;
   padding: 0.5rem;
-  border-radius: 5px;
   text-decoration: none;
+}
+
+.link-primary{
+  background-color:var(--primary); 
+  border-radius: 0.2rem;
+}
+.link-secondary:hover{
+  color: var(--primary);
 }
 .footer {
   background-color:var(--bgBlack);
@@ -143,9 +154,11 @@ hr {
   flex-direction: column;
   align-items: center;
 }
-
 .footer .link {
   color: white;
+}
+.footer ul li a i:hover{
+  color:var(--primary);
 }
 .footer-logo {
   margin: 0 5px;
@@ -188,11 +201,4 @@ hr {
 /** blogs **/
 .showcase-blog {
   padding-bottom: 6rem;
-}
-
-/* All hover effects */
-
-.link:hover {
-  background-color: #43434842;
-  padding: 0.5rem;
 }
